@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+    background-image: url(images/astronaut-outer-space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.avatar {
+    width: 80px;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+#side-box {
+    float: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    text-align: center;
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px;
+    
+    /* margin: 10px; */
+}
+
+#side-box h1 {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#side-box h2 {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: normal;
+    color: gray;
+}
+
+.main-nav ul {
+    list-style-type: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+  }
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.personal-links li {
+    display: inline;
+    list-style: none;   
+}
+
+#content {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    text-align: left;
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+ } 
+
+ .list-info {
+  padding-left: 20px;
+  list-style: disc;
+ }
+
+ .list-info li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+ .list-info p{
+   color: gray;
+   text-align: right;
+ }
+
