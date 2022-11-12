@@ -62,7 +62,7 @@ body {
 
 #side-box h3 {
   font-family: Arial;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 12px;
   font-style: italic;
   color: gray;
@@ -164,6 +164,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   text-align: justify;
+  font-size: medium;
  }
 
  .list-info {
