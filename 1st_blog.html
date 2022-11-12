@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Chuyen Pham</title>
+    <link rel="stylesheet" href="style_blog_page.css" />
+    <script type="text/javascript" src="func.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div id="side-box">
+          <img class="avatar" src="images/avatar.jpg" alt="" />
+          <h1>Chuyen Pham</h1>
+          <h2>PhD. Researcher</h2>
+          <h3>“Success is not a destination, it's a journey.“ - Zig Ziglar</h3>
+          <br />
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">About me</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="">Code Repository</a></li>
+            </ul>
+          </nav>
+          <br />
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" onclick="darkMode(this)" />
+            <span class="slider round"></span>
+          </label>
+          <br />
+          <br />
+          <ul class="personal-links">
+            <li>
+              <a href="https://www.facebook.com/ngocchuyen/" target="_blank"
+                ><img class="icon" src="images/facebook.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ngoc-chuyen-pham-041822aa/"
+                target="_blank"
+                ><img class="icon" src="images/linkedin.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="" target="_blank"
+                ><img class="icon" src="images/github.png" alt=""
+              /></a>
+            </li>
+          </ul>
+          <p>&copy;2022</p>
+        </div>
+        <div id="content">
+          <h1>How does Decision Tree work?</h1>
+          <br>
+          <h2>06/11/2022</h2>
+          <br />
+            <p>The Decision Tree algorithm is a member of the supervised learning algorithm family. 
+              Unlike other supervised learning algorithms, the decision tree algorithm can be used to solve both regression 
+              and classification problems.</p>
+            <br>
+            <img class="img_blog" src="images/decision_tree.PNG" alt="">
+            <br>
+            <p>+ In general, a Decision tree make a statement and then makes a decision based on 
+                whether or not the statement is True or False.</p>
+            <p>+ A Decision tree composes of a <b>root node (or the root)</b> at the very top of the tree, several 
+                <b>internal node (or branches)</b> with arrows pointing to and away from them and <b> several leaf nodes (or leaves) 
+                    </b> with an arrow pointing to each of them.</p>
+            <br>
+            <p>+ <b>To understand how a Decision tree works, let's take a look at a simple example below:</b></p>
+            <br>
+            <img class="img_blog" src="images/data_sample.PNG" alt="">
+            <br>
+            <p>+ The example data composes of 4 columns with each row holds the information about a person including gender, 
+                age and whether that person like to eat fried chicken and 
+                and finally want to drink on friday night.</p>
+            <p>+ There are 2 type of data in this table: numeric data (age) and boolean data 
+                (gender, like fried chicken and want to drink on friday night).</p>
+            <p>+ We will use the first 3 columns <b>(Gender, Age and Like fried chicken)</b> to predict whether a person want to 
+                <b>hava a drink on friday night</b>.</p>
+            <br>
+            <p><b>✓ Step 1:</b> we need to decide which variable <b>(Gender, Age or Like fried chicken)</b>
+                should be on top of the tree or which question we need to ask first.</p>
+            <p class="indent">• To do so, we first examine how well each variable predicts Friday night drinks. As shown in the graph below, 
+              <b>Like fried chicken</b> appears to be more predictive of who will and will not have a drink on Friday nights than <b>Gender</b>, because both of leaves in Gender is impure 
+              while only one leaf in Like fried chicken is impure.</p>
+            <br>
+            <img class="img_blog" src="images/Tree_top.PNG" alt="">
+            <br>
+            <p class="indent">• We can quantify the impurity of each variable using a method called <b>Gini impurity</b>. 
+            There are also several different method i.e., Entropy and Information gain. All of them are quite similar. 
+            The equation to calculate Gini impurity is shown in figure below.</p>
+            <br>
+            <img class="img_blog" src="images/gini_impurity.PNG" alt="">
+            <br>
+            <img class="img_blog" src="images/Total_gini.PNG" alt="">
+            <br>
+            <p class="indent">• However, there is still a variable that we did not consider yet i.e., <b>Age</b>. This variable is different
+              from the other two as it is a numeric variable, which is a little complicated to calculate the gini impurity of this variable. 
+              To calculate the gini gini impurity of <b>Age</b>, we first need to sort it from lowest to highest value. 
+              Next, we need to calculate the average age for all adjacent people. Finally</p>
+            <br>
+            <img class="img_blog" src="images/age_var.PNG" alt="">
+            <br>
+            <img class="img_blog" src="images/example_of_age.PNG" alt="">
+            <br>
+
+
+            
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

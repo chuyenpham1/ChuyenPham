@@ -154,10 +154,10 @@ body {
  }
 
  .list-info {
-  padding-left: 20px;
+  padding-left: 50px;
   list-style: disc;
  }
-
+/* 
  .list-info li:not(:last-child) {
   margin-bottom: 5px;
 }
@@ -165,5 +165,5 @@ body {
  .list-info p{
    color: gray;
    text-align: right;
- }
+ } */
 
